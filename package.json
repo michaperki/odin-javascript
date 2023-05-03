@@ -1,0 +1,23 @@
+{
+  "name": "odin-javascript",
+  "version": "1.0.0",
+  "description": "Odin Project Javascript Projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaperki/odin-javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaperki/odin-javascript/issues"
+  },
+  "homepage": "https://github.com/michaperki/odin-javascript#readme",
+  "devDependencies": {
+    "eslint": "^8.39.0",
+    "prettier": "2.8.8"
+  }
+}
