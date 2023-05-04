@@ -1,9 +1,5 @@
 // initial page load function
 
-import { homePageLoad } from "./homePageLoad.js";
-import { menuPageLoad } from "./menuPageLoad.js";
-import { contactPageLoad } from "./contactPageLoad.js";
-
 export function initialPageLoad() {
     const content = document.querySelector("#content");
     const header = document.createElement("header");
@@ -42,19 +38,5 @@ export function initialPageLoad() {
     footerText.textContent = "© 2023 Mike's Steak House";
     footer.appendChild(footerText);
 
-    home.addEventListener("click", () => {
-        homePageLoad();
-        console.log("home button clicked")
-        }
-    );
 
-    menu.addEventListener("click", () => {
-        menuPageLoad();
-        }
-    );
-
-    contact.addEventListener("click", () => {
-        contactPageLoad();
-        }
-    );
 }
