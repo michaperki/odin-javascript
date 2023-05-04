@@ -1,5 +1,9 @@
 // initial page load function
 
+import { homePageLoad } from "./homePageLoad.js";
+import { menuPageLoad } from "./menuPageLoad.js";
+import { contactPageLoad } from "./contactPageLoad.js";
+
 export function initialPageLoad() {
     const content = document.querySelector("#content");
     const header = document.createElement("header");
@@ -35,16 +39,22 @@ export function initialPageLoad() {
     content.appendChild(footer);
 
     const footerText = document.createElement("p");
-    footerText.textContent = "© 2021 Mike's Steak House";
+    footerText.textContent = "© 2023 Mike's Steak House";
     footer.appendChild(footerText);
 
     home.addEventListener("click", () => {
-        const main = document.querySelector(".main");
-        main.innerHTML = "";
-        const homeText = document.createElement("p");
-        homeText.textContent = "Welcome to Mike's Steak House! We have the best steaks in town!";
-        homeText.classList.add("home-text");
-        main.appendChild(homeText);
-    }
+        homePageLoad();
+        console.log("home button clicked")
+        }
+    );
+
+    menu.addEventListener("click", () => {
+        menuPageLoad();
+        }
+    );
+
+    contact.addEventListener("click", () => {
+        contactPageLoad();
+        }
     );
 }
