@@ -1,25 +1,357 @@
-* {
+/* this style page will use mobile first responsive design principles */
+
+/* this is the main style page for the website */
+
+/* this is the style for the header */
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1em;
+    clear: left;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+/* this is the style for the nav bar button */
+
+.nav-button {
+    display: block;
+    float: left;
+    padding: 1em;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+}
+
+/* this is the style for the nav bar button when the screen is small */
+
+.nav-button-small {
+    display: block;
+    float: left;
+    padding: 1em;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+}
+
+/* this is the style for the nav bar links */
+
+.nav-links {
+    display: none;
+    float: left;
+    padding: 1em;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+}
+
+/* this is the style for the nav bar links when the screen is small */
+
+.nav-links-small {
+    display: none;
+    float: left;
+    padding: 1em;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+}
+
+/* this is the style for the nav bar links when the screen is small and the nav bar is open */
+
+.nav-links-small-open {
+    display: block;
+    float: left;
+    padding: 1em;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+}
+
+/* this is the style for the nav bar */
+
+nav {
+    float: left;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+/* this is the style for the nav bar when the screen is small */
+
+nav.small {
+    float: left;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+/* this is the style for the nav bar when the screen is small and the nav bar is open */
+
+nav.small.open {
+    float: left;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+/* this is the style for the main content */
+
+main {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+/* this is the style for the footer */
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    clear: left;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+/* this is the style for pit form container */
+/* the container should appear fixed and floating over the page */
+
+.form-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    overflow: auto;
+    background-color: #000000;
+    padding-top: 50px;
+    z-index: 1;
+}
+
+form {
+    margin: 0 auto;
+    width: 80%;
+    padding: 1em;
+    border: 1px solid #ffffff;
+    border-radius: 1em;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+/* this is the style for the pit form close button */
+
+.close-form-button {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-form-button:hover,
+.close-form-button:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* this is the style for the pit form submit button */
+
+.submit-button {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 1em;
+    color: #ffffff;
+    padding: 0.5em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+.submit-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* this is the style for the pit form input fields */
+
+input[type=text],
+input[type=number],
+input[type=date],
+input[type=time],
+input[type=submit] {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
     box-sizing: border-box;
+    border: 1px solid #ffffff;
+    border-radius: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    background-color: #000000;
+    color: #ffffff;
 }
 
-body {
-    background-color: #f1f1f1;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    padding: 20px;
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=date]:focus,
+input[type=time]:focus,
+
+/* this is the style for the pit form text area */
+
+textarea:focus {
+    background-color: #ffffff;
+    color: #000000;
 }
 
-/* Center website */
-.main {
-    max-width: 1000px;
-    margin: auto;
+/* this is the style for the pit form text area */
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    border-radius: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    background-color: #000000;
+    color: #ffffff;
 }
 
-h1 {
-    font-size: 50px;
-    word-break: break-all;
+/* this is the style for the pit form select menu */
+
+select {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    border-radius: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    background-color: #000000;
+    color: #ffffff;
 }
 
-.row {
-    margin: 8px -16px;
+/* this is the style for the pit form radio buttons */
+
+input[type=radio] {
+    margin: 0.5em 0;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    border-radius: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    background-color: #000000;
+    color: #ffffff;
 }
+
+/* this is the style for the pit form radio button labels */
+
+.radio-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+/* this is the style for the pit form check boxes */
+
+input[type=checkbox] {
+    margin: 0.5em 0;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    border-radius: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* this is the style for the pit form check box labels */
+
+.checkbox-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+/* this is the style for the add pit button container */
+
+.button-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1em;
+    z-index: 1;
+}
+
+/* this is the style for the add pit button */
+
+.add-pit-button {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 1em;
+    color: #ffffff;
+    padding: 0.5em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+.add-pit-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* this is the style for the pit form close button
+    on the pit form. It should be an "X" in the upper right corner
+    of the pit form.
+ */
+
+.close-form-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-form-button:hover,
+.close-form-button:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* */
